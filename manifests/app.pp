@@ -20,6 +20,8 @@ class wordpress::app (
   $wp_debug,
   $wp_debug_log,
   $wp_debug_display,
+  $wp_home,
+  $wp_siteurl,
 ) {
   wordpress::instance::app { $install_dir:
     install_dir          => $install_dir,

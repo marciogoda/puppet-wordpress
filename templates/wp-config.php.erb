@@ -96,6 +96,14 @@ define('SITE_ID_CURRENT_SITE', 1);
 define('BLOG_ID_CURRENT_SITE', 1);
 <% end %>
 
+<% if @wp_home != '' %>
+define( 'WP_HOME', '<%= @wp_home %>' );
+<% end %>
+
+<% if @wp_siteurl != '' %>
+define( 'WP_SITEURL', '<%= @wp_siteurl %>' );
+<% end %>
+
 <% if @wp_additional_config != 'DEFAULT' -%>
 <%= scope.function_template([@wp_additional_config]) %>
 <% end -%>

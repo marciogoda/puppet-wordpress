@@ -105,6 +105,8 @@ class wordpress (
   $wp_debug             = false,
   $wp_debug_log         = false,
   $wp_debug_display     = false,
+  $wp_home              = '',
+  $wp_siteurl           = '',
 ) {
   wordpress::instance { $install_dir:
     install_dir          => $install_dir,
@@ -130,5 +132,7 @@ class wordpress (
     wp_debug             => $wp_debug,
     wp_debug_log         => $wp_debug_log,
     wp_debug_display     => $wp_debug_display,
+    wp_home              => $wp_home,
+    wp_siteurl           => $wp_siteurl,
   }
 }
