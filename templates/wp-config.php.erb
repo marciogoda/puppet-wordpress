@@ -96,11 +96,11 @@ define('SITE_ID_CURRENT_SITE', 1);
 define('BLOG_ID_CURRENT_SITE', 1);
 <% end %>
 
-<% if @wp_home != '' %>
+<% if @wp_home != 'DEFAULT' %>
 define( 'WP_HOME', '<%= @wp_home %>' );
 <% end %>
 
-<% if @wp_siteurl != '' %>
+<% if @wp_siteurl != 'DEFAULT' %>
 define( 'WP_SITEURL', '<%= @wp_siteurl %>' );
 <% end %>
 

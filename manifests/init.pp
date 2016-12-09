@@ -105,8 +105,8 @@ class wordpress (
   $wp_debug             = false,
   $wp_debug_log         = false,
   $wp_debug_display     = false,
-  $wp_home              = '',
-  $wp_siteurl           = '',
+  $wp_home              = 'DEFAULT',
+  $wp_siteurl           = 'DEFAULT',
 ) {
   wordpress::instance { $install_dir:
     install_dir          => $install_dir,
