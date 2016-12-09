@@ -45,6 +45,6 @@ class wordpress::app (
     wp_debug_log         => $wp_debug_log,
     wp_debug_display     => $wp_debug_display,
     wp_home              => $wp_home,
-    wp_siteurl           => $wp_siteurl
+    wp_siteurl           => $wp_siteurl,
   }
 }
